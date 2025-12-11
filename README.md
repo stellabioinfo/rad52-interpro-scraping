@@ -1,16 +1,47 @@
 # Rad52 InterPro Data Extraction
 
-This project uses Python to extract protein information from the Rad52 family using the public InterPro API (EBI).
+This repository contains a Jupyter Notebook used to retrieve and structure protein information related to the **Rad52 family** from the **InterPro API** (EMBL-EBI). The script performs automated data collection, parsing, and organization into a structured dataset suitable for downstream computational or biological analysis.
 
-## What the script does
-- Requests paginated data from the API  
-- Extracts accession, name, protein length, taxonomy, and e-value  
-- Stores all results in a DataFrame  
-- Saves the final dataset as a CSV file
+## Overview
 
-## Technologies
-Python, Requests, Pandas, Jupyter Notebook
+The notebook queries the InterPro API, iterates through paginated results, extracts relevant metadata, and compiles the information into a pandas DataFrame. The final dataset is exported as a CSV file.
 
-## Biological purpose
-Generate an annotated set of Rad52 proteins for downstream analyses  
-(structure, domains, evolution, etc.).
+## Data Extracted
+
+- Protein accession  
+- Protein name  
+- Protein length  
+- Taxonomic information  
+
+These fields support structural studies, domain comparison, and integration into multi-omics datasets.
+
+## Technologies Used
+
+- Python  
+- Requests (API communication)  
+- Pandas (data manipulation)  
+- Jupyter Notebook
+
+## Biological Context
+
+The Rad52 protein family plays a central role in DNA repair and homologous recombination.  
+By compiling a curated dataset of Rad52-related proteins, this project enables:
+
+- Structural prediction studies  
+- Domain annotation  
+- Evolutionary analysis
+
+## Output
+
+The repository includes:
+
+- The original `.ipynb` notebook  
+- A CSV file containing all retrieved InterPro entries  
+
+## Purpose
+
+This project demonstrates practical experience with:
+
+- Programmatic access to biological databases  
+- Data acquisition workflows  
+- Reproducible bioinformatics pipelines  
